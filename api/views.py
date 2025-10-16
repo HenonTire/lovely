@@ -7,9 +7,9 @@ from .serializer import ProductSerializer
 class CreateProductView(ListCreateAPIView):
     queryset = Products.objects.all()
     serializer_class = ProductSerializer
-    permission_classes = [IsAuthenticatedOrReadOnly]
+ 
 
 class ProductDetailView(RetrieveUpdateDestroyAPIView):
     queryset = Products.objects.all()
     serializer_class = ProductSerializer
-    permission_classes = [IsAdminUser]
+   
